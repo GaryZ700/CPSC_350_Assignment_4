@@ -28,15 +28,10 @@ corrupt while being read, or during a harddrive/solidstate drive failure may als
 	Class Lectures
 	Google C++ Stylesheet
 	Data Structures & Algorithems in C++, 2nd Edition, Goodrich, Tamassia, & Mount
-	http://peterforgacs.github.io/2017/06/25/Custom-C-Exceptions-For-Beginners/		
-	https://www.fluentcpp.com/2018/06/15/should-structs-have-constructors-in-cpp
-	http://www.cplusplus.com/reference/string/string/c_str/
-	https://www.learncpp.com/cpp-tutorial/chars/
-	https://stackoverflow.com/questions/161790/initialize-a-const-array-in-a-class-initializer-in-c/
-	https://www.cplusplus.com/reference/regex/
-	https://www.cplusplus.com/reference/istream/get/
-	https://www.cplusplus.com/reference/ios/ios/eof/
-	https://www.tutorialspoint.com/cplusplus/cpp_return_pointer_from_functions.htm
+	https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
+	www.cplusplus.com/doc/tutorial/inheritance	
+	https://stackoverflow.com/questions/4498712/c-virtual-functions-implementation-outside-the-class/
+	https://www.quora.com/How-do-I-initialize-a-dynamically-allocated-struct-object-in-C++
 
 5. Instructions for running the assignment
 	1.) Run "make"
