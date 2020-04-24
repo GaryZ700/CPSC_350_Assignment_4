@@ -28,6 +28,8 @@ corrupt while being read, or during a harddrive/solidstate drive failure may als
 	In addition, assumptions regarding the computation of idle time and data statistics were made that were not explicity stated in the instruction sheet. 
 	This may result in output values being consistently larger or smaller than the tester's expected value by the addition or subtraction of a constant value.
 	Once this constant value is identified for each statistic, the difference value between expected output and actual output will remain the smae for any input provided to the program. 
+	
+	The use of an input file with non-Linux line endings will result in undefined and unexpected behavior of the program. 
 
 4. References used to complete the assignment:
 	Class Lectures
