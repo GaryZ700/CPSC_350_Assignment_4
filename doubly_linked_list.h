@@ -4,6 +4,9 @@
   CPSC 250-02
   Assignment 4: Registrar's Office Simulation */
 
+#ifndef DOUBLY_LINKED_LIST_H_
+#define DOUBLY_LINKED_LIST_H_
+
 #include <iostream>
 #include <exception>
 #include "doubly_linked_list_interface.h"
@@ -38,22 +41,16 @@ class DoublyLinkedList : public DoublyLinkedListInterface<T>{
 			front = NULL;
 			tail = NULL;
 
-			int deletions = 0;
 			while(tempNode != NULL){
+
 				nextNode = tempNode->prev;
-				cout << "whlie loop: " << tempNode->data << endl;
 				tempNode->next = NULL;
 				tempNode->prev = NULL;
-
-				delete tempNode;
-				cout << "after delete" << endl;
-
-				tempNode = nextNode;
 				
-				++deletions;
-			}
+				delete tempNode;
 
-			cout << endl << "Doubly Linked List Deconstructor: #of Deletions " << deletions << endl; 
+				tempNode = nextNode;	
+			}
 		}
 
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -172,6 +169,7 @@ class DoublyLinkedList : public DoublyLinkedListInterface<T>{
 		}
 
 	//---------------------------------------------------------------------------------
+
 	private:
 		int size;
 		struct Node{
@@ -235,3 +233,5 @@ class DoublyLinkedList : public DoublyLinkedListInterface<T>{
 				cout << endl << "List is empty, " << errorMessage << endl;
 		}
 };
+
+#endif //DOUBLY_LINKED_H_

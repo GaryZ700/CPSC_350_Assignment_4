@@ -4,6 +4,9 @@
   CPSC 250-02
   Assignment 4: Registrar's Office Simulation */
 
+#ifndef DOUBLY_LINKED_LIST_INTERFACE_H_
+#define DOUBLY_LINKED_LIST_INTERFACE_H_
+
 template <class T>
 class DoublyLinkedListInterface{
 
@@ -19,3 +22,5 @@ class DoublyLinkedListInterface{
 		virtual int Size() const =0;
 		virtual bool Empty() const =0;
 };
+
+#endif //DOUBLY_LINKED_LIST_H_
